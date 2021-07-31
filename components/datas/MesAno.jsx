@@ -59,7 +59,7 @@ export default function MesAno(props) {
 
     return (
         <>
-            <div className='bg-white shadow rounded-md mb-0 mt-8 flex justify-center gap-2 max-w-[150px] mx-auto px-4 text-[14px] font-bold text-gray-600'>
+            <div className='bg-white shadow rounded-lg mb-0 mt-8 flex justify-center gap-2 max-w-[150px] mx-auto px-4 text-[14px] font-bold text-gray-500'>
                 <span>{mes}</span>
                 <span>{ano}</span>
             </div>
