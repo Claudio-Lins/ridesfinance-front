@@ -1,4 +1,5 @@
 import DayWeek from "./DayWeek";
+import MesAno from "./MesAno";
 
 export default function DaysOfWeek() {
 
@@ -30,15 +31,17 @@ export default function DaysOfWeek() {
   
 //COMPONENT
   return (
-    <div className="mt-4 w-[310px] flex justify-evenly">
-      <DayWeek dayName="Seg" dayNumber={diaUmSemana} Style={segunda || "boxEmpty"} />
-      <DayWeek dayName="Ter" dayNumber={diaDoisSemana} Style={terca || "boxEmpty"} />
-      <DayWeek dayName="Qua" dayNumber={diaTresSemana} Style={quarta || "boxEmpty"} />
-      <DayWeek dayName="Qui" dayNumber={diaQuatroSemana} Style={quinta || "boxEmpty"} />
-      <DayWeek dayName="Sex" dayNumber={diaCincoSemana} Style={sexta || "boxEmpty"} />
-      <DayWeek dayName="Sab" dayNumber={diaSeisSemana} Style={sabado || "boxEmpty"} />
-      <DayWeek dayName="Dom" dayNumber={diaSeteSemana} Style={domingo || "boxEmpty"} />
-      
+    <div>
+        <div className=""><MesAno /></div>
+        <div className="mt-0 w-[310px] flex justify-evenly">
+        <DayWeek dayName="Seg" dayNumber={diaUmSemana} Style={segunda || "boxEmpty"} />
+        <DayWeek dayName="Ter" dayNumber={diaDoisSemana} Style={terca || "boxEmpty"} />
+        <DayWeek dayName="Qua" dayNumber={diaTresSemana} Style={quarta || "boxEmpty"} />
+        <DayWeek dayName="Qui" dayNumber={diaQuatroSemana} Style={quinta || "boxEmpty"} />
+        <DayWeek dayName="Sex" dayNumber={diaCincoSemana} Style={sexta || "boxEmpty"} />
+        <DayWeek dayName="Sab" dayNumber={diaSeisSemana} Style={sabado || "boxEmpty"} />
+        <DayWeek dayName="Dom" dayNumber={diaSeteSemana} Style={domingo || "boxEmpty"} />
+      </div>
     </div>
   );
 }
