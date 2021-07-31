@@ -5,7 +5,7 @@ export default function Logo() {
 
 
   return (
-    <div className="mt-2">
+    <div className="mt-2 drop-shadow-lg">
       <Image
       src='/assets/logo.svg'
       width={260}

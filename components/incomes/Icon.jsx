@@ -7,8 +7,8 @@ export default function Icon(props) {
                 <Image
                 src={props.src || "/assets/check.svg"}
                 layout='fixed'
-                width={13} 
-                height={13} 
+                width={20} 
+                height={20} 
                 />
             </div>
         </>

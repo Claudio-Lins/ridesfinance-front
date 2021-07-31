@@ -4,6 +4,7 @@ import Clock from "../components/datas/clock";
 import DaysOfWeek from "../components/datas/DaysOfWeek";
 import Incomes from "../components/incomes/Incomes";
 import Logo from "../components/logo";
+import Resumes from "../components/resumes/Resumes";
 
 export default function Home() {
   return (
@@ -36,6 +37,9 @@ export default function Home() {
           </div>
           <div className="w-full px-1 mt-4">
             <Incomes />
+          </div>
+          <div className="w-full px-2 mt-4">
+            <Resumes />
           </div>
         </div>
       </main>

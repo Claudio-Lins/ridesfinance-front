@@ -31,9 +31,9 @@ export default function DaysOfWeek() {
   
 //COMPONENT
   return (
-    <div>
+    <div className="">
         <div className=""><MesAno /></div>
-        <div className="mt-0 w-[310px] flex justify-evenly">
+        <div className="mt-0 flex justify-evenly gap-2">
         <DayWeek dayName="Seg" dayNumber={diaUmSemana} Style={segunda || "boxEmpty"} />
         <DayWeek dayName="Ter" dayNumber={diaDoisSemana} Style={terca || "boxEmpty"} />
         <DayWeek dayName="Qua" dayNumber={diaTresSemana} Style={quarta || "boxEmpty"} />
