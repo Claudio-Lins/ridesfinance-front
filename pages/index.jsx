@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
-import Clock from '../components/datas/clock'
-import DaysOfWeek from '../components/datas/DaysOfWeek'
-import Logo from '../components/logo'
+import Clock from "../components/datas/clock";
+import DaysOfWeek from "../components/datas/DaysOfWeek";
+import Incomes from "../components/incomes/Incomes";
+import Logo from "../components/logo";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       </Head>
 
       <main className="relative h-screen w-full md:h-[712px] md:w-[350px] bg-black rounded-[60px] shadow-xl overflow-hidden border-[14px] border-black">
-        <Image className=" absolute"
+        <Image
+          className=" absolute"
           src="/Screen-iphone.png"
           // src="https://res.cloudinary.com/joanitafestacomarte-com/image/upload/v1627503330/Screen-iphone_xk98rm.png"
           alt="Picture of the author"
@@ -27,10 +29,13 @@ export default function Home() {
             <Clock />
           </div>
         </div>
-        <div className='relative flex flex-col items-center min-h-screen py-2'>
+        <div className="relative flex flex-col items-center min-h-screen py-2">
           <Logo />
           <div>
             <DaysOfWeek />
+          </div>
+          <div className="w-full px-1 mt-4">
+            <Incomes />
           </div>
         </div>
       </main>
