@@ -1,6 +1,5 @@
 export default function DayWeek(props) {
  
-
   return (
     <div className="mt-4">
       <div className={props.Style}>
@@ -12,4 +11,3 @@ export default function DayWeek(props) {
   );
 }
 
-// let boxDay = document.querySelector("#boxDay");

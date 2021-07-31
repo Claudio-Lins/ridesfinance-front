@@ -28,7 +28,7 @@ export default function DaysOfWeek() {
     
 
   
-
+//COMPONENT
   return (
     <div className="mt-4 w-[310px] flex justify-evenly">
       <DayWeek dayName="Seg" dayNumber={diaUmSemana} Style={segunda || "boxEmpty"} />

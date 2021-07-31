@@ -14,7 +14,8 @@ export default function Home() {
 
       <main className="relative h-screen w-full md:h-[712px] md:w-[350px] bg-black rounded-[60px] shadow-xl overflow-hidden border-[14px] border-black">
         <Image className=" absolute"
-          src="https://res.cloudinary.com/joanitafestacomarte-com/image/upload/v1627503330/Screen-iphone_xk98rm.png"
+          src="/Screen-iphone.png"
+          // src="https://res.cloudinary.com/joanitafestacomarte-com/image/upload/v1627503330/Screen-iphone_xk98rm.png"
           alt="Picture of the author"
           layout="fill"
         />
