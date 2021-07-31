@@ -4,10 +4,10 @@
 @tailwind components;
 
 .boxEmpty {
-    @apply bg-gray-50 flex flex-col text-gray-600 justify-center -space-y-1 items-center w-[37px] h-[46px] rounded-lg;
+    @apply bg-gray-50 flex flex-col text-gray-600 font-light justify-center -space-y-1 items-center w-[37px] h-[46px] rounded-lg;
   }
 .presentDay {
-    @apply bg-gradient-to-t from-pink-500 to-blue-600 flex flex-col text-white justify-center -space-y-1 items-center w-[37px] h-[46px] rounded-lg;
+    @apply bg-gradient-to-t from-pink-500 to-blue-600 flex flex-col text-white font-semibold justify-center -space-y-1 items-center w-[37px] h-[46px] rounded-lg shadow-md;
   }
 
  
