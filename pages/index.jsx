@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import Clock from "../components/datas/Clock";
+import Clock from '../components/datas/clock'
 import DaysOfWeek from "../components/datas/DaysOfWeek";
 import Incomes from "../components/incomes/Incomes";
 import Logo from "../components/logo";
