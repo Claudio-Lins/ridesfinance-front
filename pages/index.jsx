@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import Clock from "../components/datas/clock";
+import Clock from "../components/datas/Clock";
 import DaysOfWeek from "../components/datas/DaysOfWeek";
 import Incomes from "../components/incomes/Incomes";
 import Logo from "../components/logo";
@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="relative h-screen w-full md:h-[712px] md:w-[350px] bg-black rounded-[60px] shadow-xl overflow-hidden border-[14px] border-black">
+      <main className="relative h-screen w-full md:h-[712px] md:w-[350px] tablet:max-w-[400px] tablet:max-h-[800px] bg-black rounded-[60px] shadow-xl overflow-hidden border-[14px] border-black">
         <Image
           className=" absolute"
           src="/Screen-iphone.png"

@@ -3,50 +3,14 @@ import MesAno from "./MesAno";
 
 export default function DaysOfWeek() {
 
-  
-    let myDate = new Date();
-    let diaSemana = myDate.getDay() - 1;
-    let diaAtual = myDate.getDay();
-    let segunda, terca, quarta, quinta, sexta, sabado, domingo;
-      
-    if (diaAtual == dayOneWeek) {
-        segunda = 'presentDay';
-      } else if (diaAtual == dayTwoWeek) {
-        terca = 'presentDay';
-      } else if (diaAtual == dayThreeWeek) {
-        quarta = 'presentDay';
-      } else if (diaAtual == dayFourWeek) {
-        quinta = 'presentDay';
-      } else if (diaAtual == dayFiveWeek) {
-        sexta = 'presentDay';
-      } else if (diaAtual == daySixWeek) {
-        sabado = 'presentDay';
-      } else if (diaAtual == daySevenWeek) {
-        domingo = 'presentDay';
-      } else {
-        'boxEmpty'
-      }
-    
+  let myDate = new Date();
+  let diaSemana = myDate.getDay() - 1;
+  let diaAtual = myDate.getDay();
+  let segunda, terca, quarta, quinta, sexta, sabado, domingo;
 
-  
-//COMPONENT
-  return (
-    <div className="">
-        <div className=""><MesAno /></div>
-        <div className="mt-0 flex justify-evenly gap-2">
-        <DayWeek dayName="Seg" dayNumber={diaUmSemana} Style={segunda || "boxEmpty"} />
-        <DayWeek dayName="Ter" dayNumber={diaDoisSemana} Style={terca || "boxEmpty"} />
-        <DayWeek dayName="Qua" dayNumber={diaTresSemana} Style={quarta || "boxEmpty"} />
-        <DayWeek dayName="Qui" dayNumber={diaQuatroSemana} Style={quinta || "boxEmpty"} />
-        <DayWeek dayName="Sex" dayNumber={diaCincoSemana} Style={sexta || "boxEmpty"} />
-        <DayWeek dayName="Sab" dayNumber={diaSeisSemana} Style={sabado || "boxEmpty"} />
-        <DayWeek dayName="Dom" dayNumber={diaSeteSemana} Style={domingo || "boxEmpty"} />
-      </div>
-    </div>
-  );
-}
-// let myDate = new Date();
+  // let myDate = new Date();
 // let diaSemana = myDate.getDate();
+////////////////////////////////////////////////////////////////////////
 let dt = new Date();
 let dayOneWeek = dayOneOfWeek(dt).getDay();
 let dayTwoWeek = dayTwoOfWeek(dt).getDay();
@@ -55,6 +19,7 @@ let dayFourWeek = dayFourOfWeek(dt).getDay();
 let dayFiveWeek = dayFiveOfWeek(dt).getDay();
 let daySixWeek = daySixOfWeek(dt).getDay();
 let daySevenWeek = daySevenOfWeek(dt).getDay();
+
 //SEGUNDA-FEIRA
 function dayOneOfWeek(date) {
   let dayOneWeek = date.getDate() - date.getDay() + (date.getDay() === 0 ? -6 : 1);
@@ -97,6 +62,99 @@ function daySevenOfWeek(date) {
   return new Date(date.setDate(daySevenWeek));
 }
 let diaSeteSemana = daySevenOfWeek(dt).getDate();
+////////////////////////////////////////////////////////////////
 
+  // if (diaAtual == dayOneWeek) {
+  //   segunda = "presentDay";
+  // } else if (diaAtual == dayTwoWeek) {
+  //   terca = "presentDay";
+  // } else if (diaAtual == dayThreeWeek) {
+  //   quarta = "presentDay";
+  // } else if (diaAtual == dayFourWeek) {
+  //   quinta = "presentDay";
+  // } else if (diaAtual == dayFiveWeek) {
+  //   sexta = "presentDay";
+  // } else if (diaAtual == daySixWeek) {
+  //   sabado = "presentDay";
+  // } else if (diaAtual == daySevenWeek) {
+  //   domingo = "presentDay";
+  // } else {
+  //   ("boxEmpty");
+  // }
 
+  switch (diaSemana) {
+    case 0:
+      segunda = "presentDay";
+      break;
+    case 1:
+      terca = "presentDay";
+      break;
+    case 2:
+      quarta = "presentDay";
+      break;
+    case 3:
+      quinta = "presentDay";
+      break;
+    case 4:
+      sexta = "presentDay";
+      break;
+    case 5:
+      sabado = "presentDay";
+      break;
+    case 6:
+      domingo = "presentDay";
+      break;
+  
+    default:
+      break;
+  }
+ console.log("diaSemana: " + diaSemana)
+ console.log("diaAtual: " + diaAtual)
+  
 
+  //COMPONENT
+  return (
+    <div className="">
+      <div className="">
+        <MesAno />
+      </div>
+      <div className="mt-0 flex justify-evenly gap-2">
+        <DayWeek
+          dayName="Seg"
+          dayNumber={diaUmSemana}
+          Style={segunda || "boxEmpty"}
+        />
+        <DayWeek
+          dayName="Ter"
+          dayNumber={diaDoisSemana}
+          Style={terca || "boxEmpty"}
+        />
+        <DayWeek
+          dayName="Qua"
+          dayNumber={diaTresSemana}
+          Style={quarta || "boxEmpty"}
+        />
+        <DayWeek
+          dayName="Qui"
+          dayNumber={diaQuatroSemana}
+          Style={quinta || "boxEmpty"}
+        />
+        <DayWeek
+          dayName="Sex"
+          dayNumber={diaCincoSemana}
+          Style={sexta || "boxEmpty"}
+        />
+        <DayWeek
+          dayName="Sab"
+          dayNumber={diaSeisSemana}
+          Style={sabado || "boxEmpty"}
+        />
+        <DayWeek
+          dayName="Dom"
+          dayNumber={diaSeteSemana}
+          Style={domingo || "boxEmpty"}
+        />
+      </div>
+    </div>
+  );
+}

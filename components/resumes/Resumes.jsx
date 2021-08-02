@@ -4,7 +4,7 @@ export default function Resumes() {
   return (
     <>
       <div className="bg-white rounded-[10px] shadow p-2">
-        <h2 className="text-[16pt] text-center text-gray-600 font-semibold border-b">
+        <h2 className="text-[20pt] text-center text-gray-600 font-thin border-b">
           Resumes
         </h2>
         <div className=' border-b'>
