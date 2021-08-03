@@ -2,115 +2,101 @@ import DayWeek from "./DayWeek";
 import MesAno from "./MesAno";
 
 export default function DaysOfWeek() {
-
   let myDate = new Date();
-  let diaSemana = myDate.getDay() - 1;
-  let diaAtual = myDate.getDay();
-  let segunda, terca, quarta, quinta, sexta, sabado, domingo;
+  // let diaSemana = myDate.getDay() - 1;
+  // let diaAtual = myDate.getDay();
+  // let segunda, terca, quarta, quinta, sexta, sabado, domingo;
 
-  // let myDate = new Date();
-// let diaSemana = myDate.getDate();
-////////////////////////////////////////////////////////////////////////
-let dt = new Date();
-let dayOneWeek = dayOneOfWeek(dt).getDay();
-let dayTwoWeek = dayTwoOfWeek(dt).getDay();
-let dayThreeWeek = dayThreeOfWeek(dt).getDay();
-let dayFourWeek = dayFourOfWeek(dt).getDay();
-let dayFiveWeek = dayFiveOfWeek(dt).getDay();
-let daySixWeek = daySixOfWeek(dt).getDay();
-let daySevenWeek = daySevenOfWeek(dt).getDay();
-
-//SEGUNDA-FEIRA
-function dayOneOfWeek(date) {
-  let dayOneWeek = date.getDate() - date.getDay() + (date.getDay() === 0 ? -6 : 1);
-  return new Date(date.setDate(dayOneWeek));
-}
-let diaUmSemana = dayOneOfWeek(dt).getDate();
-// TERÇA-FEIRA
-function dayTwoOfWeek(date) {
-  let dayTwoWeek = date.getDate() - date.getDay() + (date.getDay() === 0 ? -5 : 2);
-  return new Date(date.setDate(dayTwoWeek));
-}
-let diaDoisSemana = dayTwoOfWeek(dt).getDate();
-// QUARTA-FEIRA
-function dayThreeOfWeek(date) {
-  let dayThreeWeek = date.getDate() - date.getDay() + (date.getDay() === 0 ? -4 : 3);
-  return new Date(date.setDate(dayThreeWeek));
-}
-let diaTresSemana = dayThreeOfWeek(dt).getDate();
-// QUINTA-FEIRA
-function dayFourOfWeek(date) {
-  let dayFourWeek = date.getDate() - date.getDay() + (date.getDay() === 0 ? -3 : 4);
-  return new Date(date.setDate(dayFourWeek));
-}
-let diaQuatroSemana = dayFourOfWeek(dt).getDate();
-// SEXTA-FEIRA
-function dayFiveOfWeek(date) {
-  let dayFiveWeek = date.getDate() - date.getDay() + (date.getDay() === 0 ? -2 : 5);
-  return new Date(date.setDate(dayFiveWeek));
-}
-let diaCincoSemana = dayFiveOfWeek(dt).getDate();
-// SABADO
-function daySixOfWeek(date) {
-  let daySixWeek = date.getDate() - date.getDay() + (date.getDay() === 0 ? -1 : 6);
-  return new Date(date.setDate(daySixWeek));
-}
-let diaSeisSemana = daySixOfWeek(dt).getDate();
-// DOMINGO
-function daySevenOfWeek(date) {
-  let daySevenWeek = date.getDate() - date.getDay() + (date.getDay() === 0 ? 0 : 7);
-  return new Date(date.setDate(daySevenWeek));
-}
-let diaSeteSemana = daySevenOfWeek(dt).getDate();
-////////////////////////////////////////////////////////////////
-
-  // if (diaAtual == dayOneWeek) {
-  //   segunda = "presentDay";
-  // } else if (diaAtual == dayTwoWeek) {
-  //   terca = "presentDay";
-  // } else if (diaAtual == dayThreeWeek) {
-  //   quarta = "presentDay";
-  // } else if (diaAtual == dayFourWeek) {
-  //   quinta = "presentDay";
-  // } else if (diaAtual == dayFiveWeek) {
-  //   sexta = "presentDay";
-  // } else if (diaAtual == daySixWeek) {
-  //   sabado = "presentDay";
-  // } else if (diaAtual == daySevenWeek) {
-  //   domingo = "presentDay";
-  // } else {
-  //   ("boxEmpty");
-  // }
-
-  switch (diaSemana) {
-    case 0:
-      segunda = "presentDay";
-      break;
-    case 1:
-      terca = "presentDay";
-      break;
-    case 2:
-      quarta = "presentDay";
-      break;
-    case 3:
-      quinta = "presentDay";
-      break;
-    case 4:
-      sexta = "presentDay";
-      break;
-    case 5:
-      sabado = "presentDay";
-      break;
-    case 6:
-      domingo = "presentDay";
-      break;
-  
-    default:
-      break;
+  //SEGUNDA-FEIRA
+  function dayOneOfWeek() {
+    let dayOneWeek =
+      myDate.getDate() - myDate.getDay() + (myDate.getDay() === 0 ? -6 : 1);
+    return new Date(myDate.setDate(dayOneWeek));
   }
- console.log("diaSemana: " + diaSemana)
- console.log("diaAtual: " + diaAtual)
+  let diaUmSemana = dayOneOfWeek(myDate).getDate();
+  // TERÇA-FEIRA
+  function dayTwoOfWeek() {
+    let dayTwoWeek =
+      myDate.getDate() - myDate.getDay() + (myDate.getDay() === 0 ? -5 : 2);
+    return new Date(myDate.setDate(dayTwoWeek));
+  }
+  let diaDoisSemana = dayTwoOfWeek(myDate).getDate();
+  // QUARTA-FEIRA
+  function dayThreeOfWeek() {
+    let dayThreeWeek =
+      myDate.getDate() - myDate.getDay() + (myDate.getDay() === 0 ? -4 : 3);
+    return new Date(myDate.setDate(dayThreeWeek));
+  }
+  let diaTresSemana = dayThreeOfWeek(myDate).getDate();
+  // QUINTA-FEIRA
+  function dayFourOfWeek() {
+    let dayFourWeek =
+      myDate.getDate() - myDate.getDay() + (myDate.getDay() === 0 ? -3 : 4);
+    return new Date(myDate.setDate(dayFourWeek));
+  }
+  let diaQuatroSemana = dayFourOfWeek(myDate).getDate();
+  // SEXTA-FEIRA
+  function dayFiveOfWeek() {
+    let dayFiveWeek =
+      myDate.getDate() - myDate.getDay() + (myDate.getDay() === 0 ? -2 : 5);
+    return new Date(myDate.setDate(dayFiveWeek));
+  }
+  let diaCincoSemana = dayFiveOfWeek(myDate).getDate();
+  // SABADO
+  function daySixOfWeek() {
+    let daySixWeek =
+      myDate.getDate() - myDate.getDay() + (myDate.getDay() === 0 ? -1 : 6);
+    return new Date(myDate.setDate(daySixWeek));
+  }
+  let diaSeisSemana = daySixOfWeek(myDate).getDate();
+  // DOMINGO
+  function daySevenOfWeek() {
+    let daySevenWeek =
+      myDate.getDate() - myDate.getDay() + (myDate.getDay() === 0 ? 0 : 7);
+    return new Date(myDate.setDate(daySevenWeek));
+  }
+  let diaSeteSemana = daySevenOfWeek(myDate).getDate();
+  ////////////////////////////////
+
+  let semana = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"];
+  let d = new Date();
   
+  // switch (diaSemana) {
+    //   case 0:
+    //     segunda = "presentDay";
+    //     break;
+    //   case 1:
+    //     terca = "presentDay";
+    //     break;
+    //   case 2:
+    //     quarta = "presentDay";
+    //     break;
+    //   case 3:
+    //     quinta = "presentDay";
+    //     break;
+    //   case 4:
+    //     sexta = "presentDay";
+    //     break;
+    //   case 5:
+    //     sabado = "presentDay";
+    //     break;
+    //   case 6:
+    //     domingo = "presentDay";
+    //     break;
+    
+    //   default:
+    //     break;
+    // }
+    // console.log("diaSemana: " + diaSemana);
+    // console.log("diaAtual: " + diaAtual);
+    // console.log("diaUmSemana: " + diaUmSemana);
+    // console.log("diaDoisSemana: " + diaDoisSemana);
+    // console.log("dayOneOfWeek: " + dayOneOfWeek());
+    // console.log("dayTwoOfWeek: " + dayTwoOfWeek());
+    // console.log("dayThreeOfWeek: " + dayThreeOfWeek());
+    // console.log(semana[d.getDay()]);
+    
+
 
   //COMPONENT
   return (
@@ -122,37 +108,38 @@ let diaSeteSemana = daySevenOfWeek(dt).getDate();
         <DayWeek
           dayName="Seg"
           dayNumber={diaUmSemana}
-          Style={segunda || "boxEmpty"}
+          Style={semana[d.getDay()] === "Seg" ? "presentDay" : "boxEmpty"}
         />
         <DayWeek
           dayName="Ter"
           dayNumber={diaDoisSemana}
-          Style={terca || "boxEmpty"}
+          Style={semana[d.getDay()] === "Ter" ? "presentDay" : "boxEmpty"}
+          // Style={terca || "boxEmpty"}
         />
         <DayWeek
           dayName="Qua"
           dayNumber={diaTresSemana}
-          Style={quarta || "boxEmpty"}
+          Style={semana[d.getDay()] === "Qua" ? "presentDay" : "boxEmpty"}
         />
         <DayWeek
           dayName="Qui"
           dayNumber={diaQuatroSemana}
-          Style={quinta || "boxEmpty"}
+          Style={semana[d.getDay()] === "Qui" ? "presentDay" : "boxEmpty"}
         />
         <DayWeek
           dayName="Sex"
           dayNumber={diaCincoSemana}
-          Style={sexta || "boxEmpty"}
+          Style={semana[d.getDay()] === "Sex" ? "presentDay" : "boxEmpty"}
         />
         <DayWeek
           dayName="Sab"
           dayNumber={diaSeisSemana}
-          Style={sabado || "boxEmpty"}
+          Style={semana[d.getDay()] === "Sab" ? "presentDay" : "boxEmpty"}
         />
         <DayWeek
           dayName="Dom"
           dayNumber={diaSeteSemana}
-          Style={domingo || "boxEmpty"}
+          Style={semana[d.getDay()] === "Dom" ? "presentDay" : "boxEmpty"}
         />
       </div>
     </div>

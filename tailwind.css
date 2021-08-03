@@ -4,10 +4,13 @@
 @tailwind components;
 
 .boxEmpty {
-    @apply bg-gray-50 flex flex-col text-gray-600 font-light justify-center -space-y-0.5 items-center w-[30px] h-[40px] rounded-lg;
+    @apply bg-gray-50 flex flex-col text-gray-600 font-light justify-center -space-y-0.5 items-center w-[38px] h-[45px] rounded-lg;
   }
 .presentDay {
-    @apply bg-gradient-to-t from-[#910BFA] to-[#FF0404] flex flex-col text-white font-semibold justify-center -space-y-0.5 items-center w-[30px] h-[40px] rounded-lg shadow-md;
+    @apply bg-gradient-to-t from-[#910BFA] to-[#FF0404] flex flex-col text-white font-semibold justify-center -space-y-0.5 items-center w-[38px] h-[45px] rounded-lg shadow-md;
+  }
+.testDay {
+    @apply bg-yellow-500 flex flex-col text-white font-semibold justify-center -space-y-0.5 items-center w-[30px] h-[40px] rounded-lg shadow-md;
   }
 
   .barRed {
