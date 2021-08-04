@@ -26,7 +26,7 @@ export default function Clock() {
   });
 
   return (
-    <div className="-mt-1 mr-1 flex justify-end text-white text-base space-x-0 font-light a71:text-xl">
+    <div className="-mt-1 mr-2 flex justify-end text-white text-base space-x-0 font-light">
       <p>{timeHours}</p>
       <p className=" animate-pulse">:</p>
       <p>{timeMinutos}</p>
