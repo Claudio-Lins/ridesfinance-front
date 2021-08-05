@@ -6,12 +6,12 @@ import Logo from "../components/logo";
 
 export default function Quilometragem() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-0 bg-black tablet:bg-yellow-600">
+    <div className="flex flex-col items-center justify-center min-h-screen py-0 bg-black md:bg-yellow-600">
       <Head>
         <title>Ride$Finance</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="relative h-screen w-full md:h-[800px] md:w-[350px] tablet:max-w-[400px] tablet:max-h-[800px] rounded-[61px] shadow-xl overflow-hidden">
+      <main className="relative h-screen w-full md:h-[800px] md:w-[350px] md:max-w-[400px] md:max-h-[800px] rounded-[61px] shadow-xl overflow-hidden">
         <div className=" inset-x-0">
           <Image
             className=" absolute"
@@ -34,7 +34,7 @@ export default function Quilometragem() {
         </div>
 
         <div className="relative min-h-screen  p-6">
-          <div className="tablet:mr-2 mr-4 flex justify-end text-white">
+          <div className="md:mr-2 mr-4 flex justify-end text-white">
             <Clock />
           </div>
           <div className="flex flex-col items-center py-2">

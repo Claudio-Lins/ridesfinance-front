@@ -6,13 +6,13 @@ import Logo from "../components/logo";
 
 export default function Combustivel() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-0 bg-black tablet:bg-yellow-600">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-black border-[14px] border-black md:border-none md:bg-purple-800">
       <Head>
         <title>Ride$Finance</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="relative h-screen w-full md:h-[800px] md:w-[350px] tablet:max-w-[400px] tablet:max-h-[800px] rounded-[61px] shadow-xl overflow-hidden">
-        <div className=" inset-x-0">
+      <main className="relative h-screen w-full md:h-[800px] md:w-[350px] md:max-w-[400px] md:max-h-[800px] rounded-[61px] shadow-xl overflow-hidden">
+      <div className=" inset-x-0 w-full">
           <Image
             className=" absolute"
             src="/Screen-iphone.png"
@@ -22,6 +22,7 @@ export default function Combustivel() {
             objectFit="cover"
           />
         </div>
+        <div className="hidden xs:flex">
         <Image
           className="absolute"
           src="/assets/frame.svg"
@@ -29,12 +30,13 @@ export default function Combustivel() {
           layout="fill"
           objectFit="cover"
         />
+        </div>
         <div className=" absolute w-full flex justify-center items-end bottom-0">
           <Footer />
         </div>
 
         <div className="relative min-h-screen  p-6">
-          <div className="tablet:mr-2 mr-4 flex justify-end text-white">
+          <div className="md:mr-2 mr-4 flex justify-end text-white">
             <Clock />
           </div>
           <div className="flex flex-col items-center py-2">

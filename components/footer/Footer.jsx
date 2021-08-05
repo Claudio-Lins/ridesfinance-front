@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Footer(){
     return (
-        <div className="z-10 absolute px-2 h-[100px] w-full flex justify-evenly items-center">
+        <div className="z-10 bg-black rounded-t-[40px] xs:bg-transparent absolute px-2 h-[100px] w-full flex justify-evenly items-center">
             <Link href="/gas">
                 <button className=" cursor-pointer w-[60px] h-[60px] p-2 text-white">
                     <Image src="/assets/FooterIcons/007-gas-station.svg"
@@ -21,7 +21,7 @@ export default function Footer(){
                 </button>
             </Link>
             <Link href="/">
-                <button className=" cursor-pointer w-[60px] h-[60px] p-2 mb-5 text-white">
+                <button className=" cursor-pointer border rounded-full xs:border-none w-[60px] h-[60px] p-2 mb-5 text-white">
                     <Image src="/assets/FooterIcons/009-coin.svg"
                     width={60}
                     height={60}
