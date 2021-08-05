@@ -3,11 +3,8 @@ import Image from "next/image";
 import Clock from "../components/datas/clock";
 import Footer from "../components/footer/Footer";
 import Logo from "../components/logo";
-import DaysOfWeek from "../components/datas/DaysOfWeek";
-import Incomes from "../components/incomes/Incomes";
-import Resumes from "../components/resumes/Resumes";
 
-export default function Home() {
+export default function Quilometragem() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-0 bg-black tablet:bg-yellow-600">
       <Head>
@@ -43,17 +40,10 @@ export default function Home() {
           <div className="flex flex-col items-center py-2">
             <Logo />
           </div>
-          <div>
-            <DaysOfWeek />
-          </div>
-          <div className="w-full px-1 mt-4">
-            <Incomes />
-          </div>
-          <div className="w-full px-2 mt-4">
-            <Resumes />
-          </div>
-          <div className="flex flex-col items-center bg-white rounded-lg bg-opacity-70 mt-4">
-            tes
+          <div className="flex flex-col items-center bg-white rounded-lg bg-opacity-70 mt-4 p-4">
+            <div className="text-xl text-center">
+                Quilometragem
+            </div>
           </div>
         </div>
       </main>

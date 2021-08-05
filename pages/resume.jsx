@@ -7,7 +7,7 @@ import DaysOfWeek from "../components/datas/DaysOfWeek";
 import Incomes from "../components/incomes/Incomes";
 import Resumes from "../components/resumes/Resumes";
 
-export default function Home() {
+export default function transaction() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-0 bg-black tablet:bg-yellow-600">
       <Head>
