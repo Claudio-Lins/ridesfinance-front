@@ -126,7 +126,7 @@ export default function DaysOfWeek() {
       <div className="">
         <MesAno />
       </div>
-      <div className="mt-0 flex justify-evenly gap-2">
+      <div className="mt-0 flex justify-center space-x-2">
         <DayWeek
           dayName="Seg"
           dayNumber={diaUmSemana}

@@ -1,13 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import Clock from "../components/datas/clock";
 import Footer from "../components/footer/Footer";
 import Logo from "../components/logo";
-import DaysOfWeek from "../components/datas/DaysOfWeek";
-import Incomes from "../components/incomes/Incomes";
-import Resumes from "../components/resumes/Resumes";
 
-export default function Home() {
+export default function Login() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-black border-[14px] border-black md:border-none md:bg-purple-800">
       <Head>
@@ -26,36 +24,63 @@ export default function Home() {
           />
         </div>
         <div className="hidden xs:flex">
-        <Image
-          className="absolute"
-          src="/assets/frame.svg"
-          alt="Picture of the author"
-          layout="fill"
-          objectFit="cover"
-        />
+          <Image
+            className="absolute"
+            src="/assets/frame.svg"
+            alt="Picture of the author"
+            layout="fill"
+            objectFit="cover"
+          />
         </div>
-        <div className=" absolute w-full flex justify-center items-end bottom-0">
+        <div className="absolute w-full flex justify-center items-end bottom-0">
           <Footer />
         </div>
 
-        <div className="relative min-h-screen  p-6">
-          <div className="md:mr-2 mr-4 flex justify-end text-white">
-            <Clock />
-          </div>
-          <div className="flex flex-col items-center py-2">
-            <Logo />
-          </div>
-          <div>
-            <DaysOfWeek />
-          </div>
-          <div className="w-full px-1 mt-4">
-            <Incomes />
-          </div>
-          <div className="w-full px-2 mt-4">
-            <Resumes />
-          </div>
-          <div className="flex flex-col items-center bg-white rounded-lg bg-opacity-70 mt-4">
-            tes
+        <div className="relative sm:mr-7 mr-4 mt-6 flex justify-end text-white">
+          <Clock />
+        </div>
+        <div className="flex flex-col items-center mt-6">
+          <Logo />
+        </div>
+        <div className="relative w-full px-10 mt-16">
+          <div className=" flex flex-col items-center bg-white rounded-xl shadow-md">
+            <h2 className="mt-6 text-2xl font-bold tracking-wider">Welcome</h2>
+            <form action="" className="w-full p-8">
+              <div className="relative">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email Address"
+                  className=" peer h-10 w-full border-b-2 border-gray-300 placeholder-transparent text-gray-900 focus:outline-none focus:border-pink-600"
+                />
+                <label
+                  htmlFor="email"
+                  className="absolute left-0 -top-3.5 transition-all text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-300 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-xs"
+                >
+                  Email Address
+                </label>
+              </div>
+              <div className="mt-6 relative">
+                <input
+                  id="password"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  className="peer h-10 w-full border-b-2 border-gray-300 placeholder-transparent text-gray-900 focus:outline-none focus:border-pink-600"
+                />
+                <label
+                  htmlFor="password"
+                  className="absolute left-0 -top-3.5 transition-all text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-300 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-xs"
+                >
+                  Password
+                </label>
+              </div>
+              <div className='w-full flex flex-col justify-center mt-6'>
+                <Link href='/resume'><button className="bg-pink-600 p-2 rounded-md w-full text-white">Login</button></Link>
+                <button className="text-xs text-pink-600 mt-2">Esqueceu seu password?</button>
+              </div>
+            </form>
           </div>
         </div>
       </main>

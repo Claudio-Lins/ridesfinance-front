@@ -7,7 +7,7 @@ import DaysOfWeek from "../components/datas/DaysOfWeek";
 import Incomes from "../components/incomes/Incomes";
 import Resumes from "../components/resumes/Resumes";
 
-export default function Resume() {
+export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-black border-[14px] border-black md:border-none md:bg-purple-800">
       <Head>
@@ -34,12 +34,12 @@ export default function Resume() {
           objectFit="cover"
         />
         </div>
-        <div className="absolute w-full flex justify-center items-end bottom-0">
+        <div className=" absolute w-full flex justify-center items-end bottom-0">
           <Footer />
         </div>
 
-        <div className="relative min-h-screen p-6">
-          <div className="sm:mr-2 mr-0 flex justify-end text-white">
+        <div className="relative min-h-screen  p-6">
+          <div className="md:mr-2 mr-4 flex justify-end text-white">
             <Clock />
           </div>
           <div className="flex flex-col items-center py-2">
@@ -55,7 +55,7 @@ export default function Resume() {
             <Resumes />
           </div>
           <div className="flex flex-col items-center bg-white rounded-lg bg-opacity-70 mt-4">
-            
+            tes
           </div>
         </div>
       </main>
